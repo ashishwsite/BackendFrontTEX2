@@ -1,6 +1,6 @@
 // const connectMongoose=require('./db')
 const express=require('express')
-const port=process.env.PORT ||5000;
+// const port=process.env.PORT ||5000;
 var cors=require('cors')
 // connectMongoose();
 require('./db')
@@ -29,7 +29,7 @@ app.use(cors())
 // })
 
 
-app.use('/auth',require('./Routes/Auth'))
+app.use('/',require('./Routes/Auth'))
 app.get("/", (req, res) => {
     app.use(express.static(path.resolve(__dirname, "frontend", "build")));
     res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));

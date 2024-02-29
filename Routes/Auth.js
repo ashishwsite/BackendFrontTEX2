@@ -2,9 +2,10 @@ const  express=require('express')
 const User=require('../Modal/User')
 const router=express.Router();
 
-router.get('/',async(req,res)=>{
+router.get('/name',async(req,res)=>{
   return res.json({"name":"ramsashhish"})
 })
+// /contact page se aa jaega jab request aayega 
 router.post('/contact', async(req,res)=>{
     var bodyData=req.body
     console.log("req body data ",bodyData)
