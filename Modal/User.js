@@ -29,4 +29,5 @@ const UserSchema = new Schema({
   // mongose.modal(modalName,Shema)  it make a model from give schema 
   const User = mongoose.model('user', UserSchema);
   // here User is model which is expoerted
+  // UserSchema ko user name se export karo 
   module.exports = User;

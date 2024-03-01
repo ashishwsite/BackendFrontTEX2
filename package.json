@@ -4,8 +4,7 @@
   "description": "this is backend server for tax_consultancy project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "author": "ramashish",
   "license": "ISC",
